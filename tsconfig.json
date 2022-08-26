@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".", // start für compiler 
+      "declaration": true,
+      "esModuleInterop": true,
+      "lib": ["dom", "esnext"],
+      "module": "commonjs",  // für import / export
+      "outDir": "build",  // ordner für Js dateien.
+      "resolveJsonModule": true,
+      "strict": true,
+      "target": "es2019" // version für js in die übersetzt wird, wieviele Generationen von Browsern gültig.
+  },
+  "include": [
+  "./**/*.ts"   // nach welchen dateien der compiler suchen soll.
+  ],
+  "exclude": [
+  "./build"    // diesen ordner nicht durchsuchen.
+  ]
+  } 
+
+  // npm init ; npm install typescript (nur für diese datei); npm install ts-node  (node für typescript für ausgabe)
